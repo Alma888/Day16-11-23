@@ -1,0 +1,20 @@
+# Day16-11-23
+
+1、如果希望监听TCP端口9000，服务器端应该怎样创建socket?
+      new ServerSocket(9000);
+      
+2、java接口的修饰符可以是（public、abstract）
+     不可以是（private、protected、final）
+     
+3、jre判断程序是否执行结束的标准是（所有的前台线程执行完毕）
+
+4、属于Object类中的方法的是（hashCode()、wait()、toString()）
+   不属于Object类中的方法的是（finally()）
+
+5、属于jdk1.6垃圾收集器的是（Serial收集器、parNew收集器、CMS收集器 ）
+   不属于jdk1.6垃圾收集器的是（G1收集器）
+   
+6、instanceof运算符能够用来判断一个对象是否为：
+      一个类的实例；
+      一个实现指定接口的类的实例；
+      一个子类的实例。
