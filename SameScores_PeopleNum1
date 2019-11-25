@@ -1,0 +1,31 @@
+# Day16-11-23
+//统计同成绩学生人数，读入N名学生的成绩，将获得某一给定分数的学生人数输出。
+//【版本二】：（自写）
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Day16_2 {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        while (sc.hasNext()) {
+            int N = sc.nextInt();//3
+            if(N==0){
+                break;
+            }
+            List<Integer> list=new ArrayList<>();
+            for(int i=0;i<N;i++) {
+                list.add(sc.nextInt());
+            }
+            int Score = sc.nextInt();//88
+            int count=0;
+            for(int a:list){
+                if(a==Score){
+                    count++;
+                }
+            }
+            System.out.println(count);
+        }
+    }
+}
